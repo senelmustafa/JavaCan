@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class topbala {
 
-	@SuppressWarnings({ "unused", "unchecked" })
+	
 	public static void main(String[] args) {
 		//Tombala yapıyoruz.
 		/*
@@ -19,40 +19,35 @@ public class topbala {
 		 */
 		System.out.println("Lütfen bir sayı giriniz\t:");
 		Scanner scan=new Scanner(System.in);
-		int sayiGir1=scan.nextInt();
+		int dizi0[]=new int[8];
+		
+		int toplam1=0;
 		
 		
-		ArrayList sayi=new ArrayList();
-		sayi.add(sayiGir1);
+		for (int i = 0; i < dizi0.length; i++) {
+			dizi0[i] =scan.nextInt();
+			//toplam1+=dizi0[i];
+			
+		}//System.out.print(Arrays.toString(dizi0));
 		
-		int sayiGir2=scan.nextInt();
-		sayi.add(sayiGir2);
 		
-		int sayiGir3=scan.nextInt();
-		sayi.add(sayiGir3);
 		
-		int sayiGir4=scan.nextInt();
-		sayi.add(sayiGir4);
 		
-		int sayiGir5=scan.nextInt();
-		sayi.add(sayiGir5);
-		//Collections.sort(sayi);
-
-		System.out.println(sayi);
-		
-		int dizi[]=new int[5];
+	
+		int dizi[]=new int[8];
 		Random s=new Random();
 		int toplam=5;
-		for (int i = 0; i < 5; i++) {
+		for (int i = 0; i < 8; i++) {
 			dizi[i]=s.nextInt(100);
-			toplam+=dizi[i];
+			toplam=dizi[i];
 			
-			System.out.print(dizi[i]+",");
-		
-			 
+			
 				
-			}
+			}System.out.print("▬▬▬▬TOMBALA SONUÇLARI▬▬▬▬ \n") ;
+			System.out.println(Arrays.toString(dizi0));
+			System.out.println(Arrays.toString(dizi));
 	}	
 	}
  
  
+//DEĞİŞİKLİK YAPILMIŞTIR
